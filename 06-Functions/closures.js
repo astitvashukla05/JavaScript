@@ -6,6 +6,7 @@ const secureBooking = function () {
     console.log(passengerBooking);
   };
 };
+
 const booker = secureBooking();
 booker();
 booker();
