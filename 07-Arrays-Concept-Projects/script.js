@@ -120,12 +120,12 @@ const setDate = function () {
   labelDate.textContent = `${date}/${month}/${year},${hours}:${mins}`;
 };
 // Display Movements Fn
-const displayMovements = function (acc, toSort) {
+const displayMovements = function (acc) {
   containerMovements.innerHTML = '';
-  const movs = toSort
-    ? acc.movements.slice().sort((a, b) => a - b)
-    : acc.movements;
-  movs.forEach((movement, index) => {
+  //  const movs = toSort
+  //  ? acc.movements.slice().sort((a, b) => a - b)
+  // : acc.movements;
+  acc.movements.forEach((movement, index) => {
     const dateNow = new Date(acc.movementsDates[index]);
     const date = `${dateNow.getDate()}`.padStart(2.0);
     const month = `${dateNow.getMonth() + 1}`.padStart(2, 0);
@@ -266,8 +266,8 @@ const grantLoan = function (e) {
 };
 btnLoan.addEventListener('click', grantLoan);
 
-let sorted = false;
-btnSort.addEventListener('click', () => {
-  displayMovements(currentActive, !sorted);
-  sorted = !sorted;
-});
+// let sorted = false;
+// btnSort.addEventListener('click', () => {
+//   displayMovements(currentActive, !sorted);
+//   sorted = !sorted;
+// });
