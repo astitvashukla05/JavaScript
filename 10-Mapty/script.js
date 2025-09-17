@@ -37,7 +37,24 @@ navigator.geolocation.getCurrentPosition(
       .addTo(map)
       .bindPopup('A pretty CSS popup.<br> Easily customizable.')
       .openPopup();
+    map.on('click', function (mapEvent) {
+      const { lat, lng } = mapEvent.latlng;
+      const newCoords = [lat, lng];
+      L.marker(newCoords)
+        .addTo(map)
+        .bindPopup(
+          L.popup({
+            minWidth: 100,
+            maxWidth: 250,
+            autoClose: false,
+            closeOnClick: false,
+          })
+        )
+        .setPopupContent('Working')
+        .openPopup();
+    });
   },
+
   function () {
     alert('could not get the location');
   }
