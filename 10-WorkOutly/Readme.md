@@ -1,6 +1,6 @@
-# 🗺️ Mapty - Workout Tracker
+# 🗺️ WorkOutly - Workout Tracker
 
-Mapty is a web app that helps you **log your workouts** (Running & Cycling) on an interactive map.  
+WorkOutlyß is a web app that helps you **log your workouts** (Running & Cycling) on an interactive map.  
 It uses the **Geolocation API** to detect your current position and **Leaflet.js** to render the map.  
 You can click anywhere on the map, add your workout details, and see them displayed both on the map and in a list.
 
