@@ -35,46 +35,6 @@ Fraction.js — better ingredient fraction formatting
 
 Forkify API — public recipe API
 
-📂 Project Structure
-12-Forkify/
-├── index.html
-├── package.json
-├── package-lock.json
-├── .gitignore
-├── .prettierrc
-├── src/
-│ ├── img/
-│ │ ├── favicon.png
-│ │ ├── icons.svg
-│ │ └── logo.png
-│ ├── js/
-│ │ ├── config.js
-│ │ ├── controller.js
-│ │ ├── helper.js
-│ │ ├── model.js
-│ │ └── views/
-│ │ ├── addRecipeView.js
-│ │ ├── bookmarkView.js
-│ │ ├── paginationView.js
-│ │ ├── previewView.js
-│ │ ├── recipeView.js
-│ │ ├── resultView.js
-│ │ ├── searchView.js
-│ │ └── view.js
-│ └── sass/
-│ ├── \_base.scss
-│ ├── \_components.scss
-│ ├── \_header.scss
-│ ├── \_preview.scss
-│ ├── \_recipe.scss
-│ ├── \_searchResults.scss
-│ ├── \_upload.scss
-│ └── main.scss
-└── forkify-architecture-recipe-loading.png
-└── forkify-flowchart-part-1.png
-└── forkify-flowchart-part-2.png
-└── forkify-flowchart-part-3.png
-
 🚀 Getting Started
 1️⃣ Install Dependencies
 npm install
