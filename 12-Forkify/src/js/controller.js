@@ -15,7 +15,7 @@ import 'regenerator-runtime/runtime';
 import searchView from './views/searchView.js';
 import resultView from './views/resultView.js';
 import paginationView from './views/paginationView.js';
-import bookmarkView from './views/bookmarkView.js';
+import bookMarkView from './views/bookMarkView.js';
 
 const controlRecipes = async function () {
   try {
@@ -28,7 +28,7 @@ const controlRecipes = async function () {
     await loadRecipe(id);
 
     recipeView.render(state.recipe);
-    bookmarkView.update(state.bookmarks);
+    bookMarkView.update(state.bookmarks);
   } catch (err) {
     console.error(err);
     recipeView.renderError(err.message);
@@ -65,11 +65,11 @@ const controlAddBookmark = function () {
   else removeBookmark(state.recipe.id);
 
   recipeView.update(state.recipe);
-  bookmarkView.render(state.bookmarks);
+  bookMarkView.render(state.bookmarks);
 };
 
 const controlBookmark = function () {
-  bookmarkView.render(state.bookmarks);
+  bookMarkView.render(state.bookmarks);
 };
 
 const controlNewRecipe = async function (newRecipe) {
@@ -80,7 +80,7 @@ const controlNewRecipe = async function (newRecipe) {
     recipeView.render(state.recipe);
     addBookmark(state.recipe);
     addRecipeView.renderMessage('Recipe Uploaded');
-    bookmarkView.render(state.bookmarks);
+    bookMarkView.render(state.bookmarks);
 
     window.history.pushState(null, '', `#${state.recipe.id}`);
 
@@ -98,7 +98,7 @@ function init() {
   paginationView.addHandler(controlPagination);
   recipeView.servingsHandler(controlServings);
   recipeView.addHandlerAddBookMarkup(controlAddBookmark);
-  bookmarkView.addHandler(controlBookmark);
+  bookMarkView.addHandler(controlBookmark);
   addRecipeView.addHandlerUploadRecipe(controlNewRecipe);
 }
 
