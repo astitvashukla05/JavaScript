@@ -4,11 +4,12 @@
   "description": "",
   "license": "ISC",
   "author": "Astitva",
-  "type": "commonjs",
+  "type": "module",
   "default": "index.html",
   "scripts": {
     "start": "parcel index.html",
     "build": "parcel build index.html --dist-dir ./dist",
+    "preview": "parcel serve dist",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
@@ -16,7 +17,7 @@
     "fraction.js": "^5.3.4",
     "parcel": "^2.16.0",
     "regenerator-runtime": "^0.14.1",
-    "saas": "^1.0.0"
+    "sass": "^1.93.2"
   },
   "devDependencies": {
     "@parcel/transformer-sass": "^2.16.0"
