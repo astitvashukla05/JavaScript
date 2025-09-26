@@ -63,4 +63,4 @@ A full MVC app with:
 	•	Add custom recipes
 	•	SCSS & Parcel setup
 
-Deployed on Vercel: (add your live link here once deployed)
+
